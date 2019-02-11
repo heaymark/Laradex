@@ -2,6 +2,7 @@
 
 namespace Laradex\Providers;
 
+use Illuminate\Support\Facades\Schema; //Se agrega por el error al realizar la migracion
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -14,6 +15,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        Schema::defaultStringLength(191);//Se agrega por el error al realizar la migracion
     }
 
     /**
